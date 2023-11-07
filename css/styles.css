@@ -20,9 +20,14 @@ a {
 }
 
 .container {
-    width: 1440px;
+    /* width: 1440px; */
     /* height:3200px; */
-    height: 600px;
+    /* height: 600px; */
+    padding-left: 15px;
+    padding-right: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 /*LOGO-WEB*/
@@ -75,6 +80,7 @@ a {
     gap: 40px;
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .header-link {
@@ -550,6 +556,8 @@ div .card-content {
     align-items: center;
     list-style: none;
     /*padding: 16px 32px;*/
+
+    flex-basis: calc(100% / 2 - 30px);
 }
 
 .customer-icon svg {
@@ -849,3 +857,31 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* CSS MEDIA QUERY */
+@media (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+            width: 768x;
+        }
+
+    .about-item{
+        flex-basis: calc(100% / 2 - 30px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+            width: 1200px;
+        }
+
+    .about-item {
+        flex-basis: calc(100% / 4 - 30px);
+    }
+}
+
