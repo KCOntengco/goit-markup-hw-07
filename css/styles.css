@@ -66,7 +66,7 @@ a {
     flex-shrink: 0;
     padding-top: 24px;
     gap: 40px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 
 .header-logo {
@@ -591,6 +591,8 @@ div .card-content {
 .footer-logo {
     display: flex;
 }
+
+.footer 
 
 .footer-icons-socials {
     width: 40px;
