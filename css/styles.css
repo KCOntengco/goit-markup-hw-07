@@ -20,33 +20,34 @@ a {
 }
 
 .container {
-    /* width: 1440px; */
-    /* height:3200px; */
-    /* height: 600px; */
     padding-left: 15px;
-    padding-right: 15px; 
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin: 0 auto;
-
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+   
     @media screen and (min-width: 428px) {
+        .container {
             width: 428px;
         }
+    }
     
-        @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+        .container {
             width: 768px;
         }
-    
-        @media screen and (min-width: 1158px) {
+    }
+    @media screen and (min-width: 1158px) {
+        .container {
             width: 1158px;
         }
+    }
 
-}
 
 /*LOGO-WEB*/
 .webstudio-web-header {
     color: var(--IRIS);
-    font-family: Raleway;
+    font-family: Raleway, san-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
@@ -59,7 +60,7 @@ a {
 /*LOGO-STUDIO*/
 .webstudio-studio-header {
     color: var(--NAVY-BLUE);
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
@@ -78,7 +79,7 @@ a {
     align-items: center;
     flex-shrink: 0;
     padding-top: 24px;
-    gap: 40px;
+    gap: 40px; 
     /* margin-left: 150px; */
 }
 
@@ -156,7 +157,7 @@ a {
 
 .dark-bg {
     background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/people-office-1-optmzd.jpg");
-    /*background-image: url("../images/people-office-1-optmzd.jpg");*/
+    /* background-image: url("../images/people-office-1-optmzd.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     /*background-color: var(--NAVY-BLUE);*/
@@ -222,7 +223,7 @@ a {
 }
 
 .service {
-    width: 1440px;
+    /* width: 1440px; */
     list-style: none;
     display: flex;
     justify-content: center;
@@ -303,10 +304,11 @@ a {
 }
 
 .backdrop {
-    width: 100%;
-    height: 100%;
+    width: 51%;
+    height: 48.5%;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
+    
     /* margin-top: 10px; */
     top: 0;
     display: flex;
@@ -603,8 +605,7 @@ div .card-content {
 .footer-logo {
     display: flex;
 }
-
-.footer 
+ 
 
 .footer-icons-socials {
     width: 40px;
