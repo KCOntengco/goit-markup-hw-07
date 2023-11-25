@@ -36,6 +36,9 @@ a {
         .container {
             width: 768px;
         }
+        .mobile-nav {
+            display: none;
+        }
     }
     @media screen and (min-width: 1158px) {
         .container {
@@ -43,6 +46,11 @@ a {
         }
     }
 
+    @media screen (max-width: 767px) {
+        .page-header {
+            display: none;
+        }
+    }
 
 /*LOGO-WEB*/
 .webstudio-web-header {
