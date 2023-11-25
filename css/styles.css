@@ -1002,9 +1002,9 @@ footer {
         flex-basis: calc(100% / 6 - 30px);
     }
 
-    /* .service-icon {
+    .service-icon {
         display: none;
-    } */
+    }
 
     .service-item > service-icon > h3 {
         text-align: center;
@@ -1083,3 +1083,13 @@ footer {
     }
 }
 
+@media (max-width: 428px) {
+    .container {
+        width: 428px;
+    }
+
+    .footer-text p {
+        text-align: center;
+        margin-right: 0;
+    }
+}
