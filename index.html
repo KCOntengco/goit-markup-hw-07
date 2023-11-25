@@ -33,7 +33,7 @@
                             <a class="link header-link" href="portfolio.html" target="_blank">Portfolio</a>
                         </li>
                         <li>
-                            <a class="link header-link" href="" >Contacts</a>
+                            <a class="link header-link" href="">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -57,10 +57,21 @@
                     <span class="webstudio-web-header">WEB</span>
                     <span class="webstudio-studio-header">STUDIO</span>
                 </a>
-                <svg width="32" height="22" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <use href="./images/icons.svg#hamburger"></use>
-                </svg>
+                <!-- <svg width="32" height="22" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <use href="./images/icons.svg#instagram-2"></use>
+                </svg> -->
 
+                <svg class="js-open-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+                    <g clip-path="url(#clip0_297053_2156)">
+                        <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_297053_2156">
+                            <rect width="32" height="22" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
             </div>
 
         </header>
@@ -74,26 +85,28 @@
                 </button>
 
                 <nav class="mobile-links">
-                    <ul>
-                        <li>
-                            <a class="link header-link mobile-active" href="index.html" target="_blank">Studio</a>
-                        </li>
-                        <li>
-                            <a class="link header-link" href="portfolio.html" target="_blank">Portfolio</a>
-                        </li>
-                        <li>
-                            <a class="link header-link" href="">Contacts</a>
-                        </li>
-                    </ul>
+                        <ul class="mobile-link list">
+                            <li class="mobile-list-item">
+                                <a id="link header-link mobile-active" href="index.html" target="_blank">Studio</a>
+                            </li>
+                            <li class="mobile-list-item">
+                                <a class="link header-link" href="portfolio.html" target="_blank">Portfolio</a>
+                            </li>
+                            <li class="mobile-list-item">
+                                <a class="link header-link" href="">Contacts</a>
+                            </li>
+                        </ul>
                 
                     <div class="mobile-contacts">
                         <ul class="mobile-contacts list">
-                            <li>
-                                <a class="link contact-info-item" href="mailto:info@devstusio.com">info@devstusio.com</a>
-                            </li>
-                            <li>
+                            <li class="mobile-contacts-item">
                                 <a class="link contact-info-item" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
                             </li>
+
+                            <li class="mobile-contacts-item">
+                                <a class="link contact-info-item" href="mailto:info@devstusio.com">info@devstusio.com</a>
+                            </li>
+                            
                         </ul>
                     </div>
 
@@ -181,17 +194,17 @@
                         <button type="button" class="modal-close-btn" data-modal-close>
                             <svg width="18" height="18">
                                 <use href="./images/icons.svg#close"></use>
-                            </svg>              
+                            </svg>
                         </button>
                         <!-- FORM -->
                         <h2 class="modal-message">Leave your contacts and we will call you back</h2>
                         <form class="order-service-form">
                                 <label for="name" class="service-form-label">
                                     <span class="input-label">Name </span>
-                                    <input type="text" class="service-form-input"/>
+                                    <input type="text" class="service-form-input" />
                                     <svg class="service-form-icon" width="18" height="18">
                                         <use href="./images/icons.svg#person"></use>
-                                    </svg>                                    
+                                    </svg>
                                 </label>
 
                                 <label for="phone" class="service-form-label">
@@ -217,9 +230,7 @@
 
                                 <label for="terms" class="service-form-label-check">
                                     <input type="checkbox" class="service-form-terms" />
-                                    <span class="input-label privacy">
-                                        I accept the terms and conditions of the <a href="">Privacy Policy</a>
-                                    </span>
+                                    <span class="input-label privacy">I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
                                 </label>
 
                                 <button type="button" class="form-send">Send</button>
@@ -229,7 +240,7 @@
             </section>
 
             <section class="main-feature">
-                <div class="container">
+                <div class="customer-container">
                     <ul class="service">
                         <li class="service-item">
                             <div class="service-icon">
@@ -237,7 +248,7 @@
                                     <use href="./images/icons.svg#antenna-1"></use>
                                 </svg>
                             </div>
-                            <h3>Strategy</h3>
+                            <h3 class="service-title">Strategy</h3>
                             <p class="service-desc">Our goal is to identify the business problem to walk away with the perfect
                                 and creative solution.</p>
                         </li>
@@ -247,7 +258,7 @@
                                     <use href="./images/icons.svg#clock-1"></use>
                                 </svg>
                             </div>
-                            <h3>Punctuality</h3>
+                            <h3 class="service-title">Punctuality</h3>
                             <p class="service-desc">Bring the key message to the brand's audience for the best price within the
                                 shortest possible time.</p>
                         </li>
@@ -257,7 +268,7 @@
                                     <use href="./images/icons.svg#diagram-1"></use>
                                 </svg>
                             </div>
-                            <h3>Diligence</h3>
+                            <h3 class="service-title">Diligence</h3>
                             <p class="service-desc">Research and confirm brands that present the strongest digital growth
                                 opportunities and minimize risk.</p>
                         </li>
@@ -267,7 +278,7 @@
                                     <use href="./images/icons.svg#astronaut-1"></use>
                                 </svg>
                             </div>
-                            <h3>Technologies</h3>
+                            <h3 class="service-title">Technologies</h3>
                             <p class="service-desc">Design practice focused on digital experiences. We bring forth a deep
                                 passion for problem-solving.</p>
                         </li>
@@ -279,9 +290,9 @@
                 <div class="container">
                     <h2 class="section-title">What Are We Doing</h2>
                     <ul class="service">
-                        <li><img src="./images/what are we doing/img1.jpg" alt="img1-desktop" height="300"></li>
-                        <li><img src="./images/what are we doing/img2.jpg" alt="img2-mobile" height="300"></li>
-                        <li><img src="./images/what are we doing/img3.jpg" alt="img3-dektop-mobile" height="300"></li>
+                        <li><img src="./images/what are we doing/img1.jpg" alt="img1-desktop" height="300" /></li>
+                        <li><img src="./images/what are we doing/img2.jpg" alt="img2-mobile" height="300" /></li>
+                        <li><img src="./images/what are we doing/img3.jpg" alt="img3-dektop-mobile" height="300" /></li>
                     </ul>
                 </div>
             </section>
@@ -291,7 +302,7 @@
                     <h2 class="section-title">Our Team</h2>
                     <ul class="service">
                         <li class="team-item">
-                            <img class="team-img" src="./images/team/img-mg.jpg" alt="mark-guerrero">
+                            <img class="team-img" src="./images/team/img-mg.jpg" alt="mark-guerrero" />
                             <div class="card-content">
                                 <h3 class="team-name">Mark Guerrero</h3>
                                 <p>Product Manager</p>
@@ -367,7 +378,7 @@
                         </li>
 
                         <li class="team-item">
-                            <img class="team-img" src="./images/team/img-tf.jpg" alt="tom-ford">
+                            <img class="team-img" src="./images/team/img-tf.jpg" alt="tom-ford" />
                             <div class="card-content">
                                 <h3 class="team-name">Tom Ford</h3>
                                 <p>Frontend Developer</p>
@@ -447,7 +458,7 @@
                         </li>
                         
                         <li class="team-item">
-                            <img class="team-img" src="./images/team/img-cg.jpg" alt="camilla-garcia" >
+                            <img class="team-img" src="./images/team/img-cg.jpg" alt="camilla-garcia" />
                             <div class="card-content">
                                 <h3 class="team-name">Camilla Garcia</h3>
                                 <p>Marketing</p>
@@ -527,7 +538,7 @@
                         </li>
 
                         <li class="team-item">
-                            <img class="team-img" src="./images/team/img-dw.jpg" alt="daniel-wilson" >
+                            <img class="team-img" src="./images/team/img-dw.jpg" alt="daniel-wilson" />
                             <div class="card-content">
                                 <h3 class="team-name">Daniel Wilson</h3>
                                 <p>UI Designer</p>
@@ -603,14 +614,14 @@
                                         </svg>
                                     </a>
                                 </div>
-                            </div>                       
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="clients">
-                <div class="container">
+                <div class="customer-container">
                 <h2 class="section-title">Customers</h2>
                 <div class="customer-icon-container">
                     <ul class="customer-icons">
@@ -725,7 +736,7 @@
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
             integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
             crossorigin="anonymous"></script>
-        <!-- <script defer src="js/mobile-menu.js"></script> -->
+        <script defer src="js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
 
     </body>

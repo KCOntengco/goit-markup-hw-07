@@ -83,7 +83,6 @@ a {
     list-style: none;
     padding-left: 0;
     /* flex-wrap: wrap; */
-    list-style: none;
 }
 
 .header-link {
@@ -136,9 +135,63 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
+
+.mobile-menu-container {
+    margin: 15px;
+}
+
+.js-close-menu {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: var(--OCEAN);
+    margin-left: auto;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+/* #mobile-links li {
+    Studio color: var(--OCEAN, #404BBF);
+} */
+
+.mobile-links li {
+    list-style: none;
+    color: var(--OCEAN, #404BBF);
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin: 40px;
+}
+
+.mobile-contacts-item {
+    color: var(--IRIS, #4D5AE5);
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
 
 
 /*MAIN-PAGE*/
@@ -312,8 +365,6 @@ a {
     align-items: center;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 /* END OF MODAL */
 
 
@@ -471,7 +522,7 @@ a {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
     display: inline-flex;
-    padding-bottom: 0px;
+    /* padding-bottom: 0px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -479,7 +530,7 @@ a {
 
     /* width: 264px;
     height: 428px; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 50px;
 
 }
@@ -522,7 +573,7 @@ div .card-content {
 }
 
 .team-img {
-    width: 100px;
+    width: 100%;
 }
 
 .team-icons {
@@ -555,6 +606,9 @@ div .card-content {
     text-align: center;
 }
 
+/* .customer-container {
+    margin-left: 0;
+} */
 
 .customer-icons {
     display: flex;
@@ -563,6 +617,7 @@ div .card-content {
     list-style: none;
     gap: 24px;
     flex-wrap: wrap;
+    margin-left: 0;
 }
 
 .customer-icon {
@@ -889,10 +944,12 @@ footer {
 }
 
 /* CSS MEDIA QUERY */
+
 @media (min-width: 428px) {
     .container {
         width: 428px;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -920,6 +977,7 @@ footer {
     .customer-icon {
         flex-basis: calc(100% / 3 - 30px);
     }
+
 }
 
 @media (min-width: 1200px) {
@@ -942,6 +1000,14 @@ footer {
 
     .customer-icon {
         flex-basis: calc(100% / 6 - 30px);
+    }
+
+    /* .service-icon {
+        display: none;
+    } */
+
+    .service-item > service-icon > h3 {
+        text-align: center;
     }
 }
 
@@ -973,6 +1039,47 @@ footer {
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .service-icon {
+        display: none;
+        
+    }
+
+    .service-title {
+        color: var(--NAVY-BLUE, #2E2F42);
+        text-align: center;
+        /* Header 2 */
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        /* 111.111% */
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+
+    }
+
+    .service {
+        /* display: inline-flex; */
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
+
+    .client > .container {
+        width: 396px;
+        height: 520px;
+        flex-shrink: 0;
+    }
+
+    .customer-container {
+        margin-bottom: 96px;
+    }
+
+    ul > .customer-icons {
+        margin-left: 0;
     }
 }
 
