@@ -10,9 +10,9 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-color: #fff;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 a {
@@ -81,7 +81,7 @@ a {
 /*HEADER*/
 .page-header {
     display: flex;
-    width: 1158px;
+    /* width: 1158px; */
     height: 75px;
     justify-content: space-between;
     align-items: center;
@@ -99,10 +99,12 @@ a {
 
 .header-list,
 .contact-info {
+    display: block;
     gap: 40px;
-    display: flex;
+    /* display: flex; */
     list-style: none;
-    flex-wrap: wrap;
+    padding-left: 0;
+    /* flex-wrap: wrap; */
 }
 
 .header-link {
@@ -239,6 +241,8 @@ a {
     text-align: left;
     padding-top: 50px;
     padding-bottom: 100px;
+    flex-wrap: wrap;
+    padding-left: 40px;
 }
 
 .service-desc {
@@ -312,8 +316,8 @@ a {
 }
 
 .backdrop {
-    width: 51%;
-    height: 48.5%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     
@@ -436,7 +440,8 @@ a {
 
 /*MAIN-SERVICE*/
 .main-service {
-    width: 1440px;
+    /* width: 1440px; */
+    /* display: none; */
     background: #FFF;
 }
 
@@ -464,12 +469,16 @@ a {
 
 /*MAIN-TEAM*/
 .main-team {
-    width: 1440px;
-    height: 780px;
+    /* width: 1440px;
+    height: 780px; */
     flex-shrink: 0;
     background: var(--CLOUD);
     margin-bottom: 0;
     padding-top: 100px;
+}
+
+.team-img {
+    /* width: 100px; */
 }
 
 .main-team .service li {
@@ -484,8 +493,8 @@ a {
     align-items: center;
     gap: 32px;
 
-    width: 264px;
-    height: 428px;
+    /* width: 264px;
+    height: 428px; */
     padding-top: 20px;
     padding-bottom: 50px;
 
@@ -566,6 +575,7 @@ div .card-content {
     align-items: center;
     list-style: none;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .customer-icon {
@@ -579,7 +589,7 @@ div .card-content {
     list-style: none;
     /*padding: 16px 32px;*/
 
-    flex-basis: calc(100% / 2 - 30px);
+    /* flex-basis: calc(100% / 2 - 30px); */
 }
 
 .customer-icon svg {
@@ -597,12 +607,22 @@ div .card-content {
 
 /*FOOTER*/
 .footer-bg {
-    width: 1440px;
-    height: 312px;
+    /* width: 1440px; */
+    /* height: 312px; */
     flex-shrink: 0;
     background: var(--NAVY-BLUE);
     padding-top: 100px;
-    padding-left: 156px;
+    padding-bottom: 100px;
+    /* padding-left: 156px; */
+}
+
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 72px;
+
 }
 
 .footer-logo a{
@@ -616,8 +636,8 @@ div .card-content {
  
 
 .footer-icons-socials {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
     /* padding: 10px; */
     border-radius: 50%;
     background-color: var(--IRIS);
@@ -890,7 +910,7 @@ footer{
 
 @media (min-width: 768px) {
     .container {
-            width: 768x;
+            width: 768px;
         }
 
     .about-item{
@@ -905,6 +925,10 @@ footer{
 
     .about-item {
         flex-basis: calc(100% / 4 - 30px);
+    }
+
+    .customer-icon {
+        flex-basis: calc(100% / 6 - 30px);
     }
 }
 
