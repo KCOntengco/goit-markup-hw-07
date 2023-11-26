@@ -1002,13 +1002,9 @@ footer {
         flex-basis: calc(100% / 6 - 30px);
     }
 
-    /* .service-icon {
-        display: none;
-    } */
-
-    .service-item > service-icon > h3 {
+    /* .service-item > service-icon > h3 {
         text-align: center;
-    }
+    } */
 }
 
 @media (max-width: 1199px) {
@@ -1058,7 +1054,20 @@ footer {
         letter-spacing: 0.72px;
         text-transform: capitalize;
         align-self: stretch;
+        margin: 0;
+    }
 
+    .service-desc {
+        align-self: stretch;
+        color: var(--SLATE, #434455);
+        /* Body Medium */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 150% */
+        letter-spacing: 0.32px;
     }
 
     .service {
@@ -1068,19 +1077,46 @@ footer {
         gap: 72px;
     }
 
-    .client > .container {
-        width: 396px;
+    .main-team > .container {
+        display: flex;
+        width: 264px;
+        padding-bottom: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .clients {
+        /* width: 396px; */
         height: 520px;
+        flex-shrink: 0;
+        align-self: center;
+    }
+
+    .customer-icon {
+        border-radius: 4px;
+        width: 190px;
+        height: 88px;
         flex-shrink: 0;
     }
 
-    .customer-container {
-        margin-bottom: 96px;
+    .footer-inner {
+       align-content: center;
     }
 
-    ul > .customer-icons {
-        margin-left: 0;
+    .footer-text, 
+    .footer-logo,
+    .footer-social,
+     {
+        width: 268px;
+        margin-right: 0;
     }
+
+   
+
+
+
 }
 
 @media (max-width: 428px) {
