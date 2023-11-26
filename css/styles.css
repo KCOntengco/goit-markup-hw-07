@@ -1037,6 +1037,13 @@ footer {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+
+    .mobile-link,
+    .mobile-contacts {
+        padding-left: 0;
+        margin: 0;
+    }
+
     .service-icon {
         display: none;
     }
@@ -1100,22 +1107,6 @@ footer {
         height: 88px;
         flex-shrink: 0;
     }
-
-    .footer-inner {
-       align-content: center;
-    }
-
-    .footer-text, 
-    .footer-logo,
-    .footer-social,
-     {
-        width: 268px;
-        margin-right: 0;
-    }
-
-   
-
-
 
 }
 
